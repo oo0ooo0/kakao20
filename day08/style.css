@@ -1,0 +1,92 @@
+body,
+main,
+div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: #0f9e99;
+}
+
+.wrap1,
+.wrap2 {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+main > .wrap1 {
+  animation: rotate_image 1s linear infinite;
+  transform-origin: 50% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main > .wrap1 > p {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+@keyframes rotate_image {
+  0% {
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  90% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+main > .wrap2 > div {
+  height: 50px;
+  margin: 10px;
+  padding: 15px 5px;
+  background: #fff;
+  animation: grow_image 1s linear infinite;
+  transform-origin: 50% 50%;
+  animation-delay: 0s;
+}
+
+main > .wrap2 > div:nth-child(2) {
+  animation-delay: 0.1s;
+}
+main > .wrap2 > div:nth-child(3) {
+  animation-delay: 0.2s;
+}
+main > .wrap2 > div:nth-child(4) {
+  animation-delay: 0.3s;
+}
+main > .wrap2 > div:nth-child(5) {
+  animation-delay: 0.4s;
+}
+@keyframes grow_image {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(2);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+}
