@@ -16,6 +16,12 @@
   color: #2e363e;
 }
 
+.nav__link i:active,
+.nav__link i:hover {
+  color: var(--main-color);
+  transition: 0.3s all ease-in-out;
+}
+
 @keyframes notificationAnimation {
   0% {
     transform: none;
